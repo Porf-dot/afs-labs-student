@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: db-deployment
-  namespace: porfirio.elguezabal
+  namespace: pelguezabal
   labels:
     app: db
 spec:
@@ -23,6 +23,6 @@ spec:
         - secretRef:
             name: db-secret
         name: db-deployment
-        image: harbor.dev.afsmtddso.com/porfirio.elguezabal-harbor-project/db:971c881-2481e15
+        image: harbor.dev.afsmtddso.com/porfirio.elguezabal-harbor-project/db:a09e544-2481e15
         ports:
         - containerPort: 5432
